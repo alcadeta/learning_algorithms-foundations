@@ -8,8 +8,13 @@ namespace SortingData
     {
         static void Main(string[] args)
         {
-            var numbers = new[] {6, 20, 8, 19, 56, 23, 87, 41, 49, 53};
-            BubbleSort.Run(numbers);
+            var numbers = new List<int> {6, 20, 8, 19, 56, 23, 87, 41, 49, 53, 1};
+            numbers.Dump("Begin state");
+
+            // BubbleSort.Run(numbers);
+            numbers = MergeSort.Run(numbers);
+
+            numbers.Dump("End state");
         }
     }
 }

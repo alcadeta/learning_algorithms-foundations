@@ -10,7 +10,6 @@ namespace SortingData
     {
         public static void Run(int[] array)
         {
-            array.Dump("Beginning state");
             for (var i = 0; i < array.Length - 1; i++)
             {
                 for (var j = 0; j < array.Length - 1; j++)
@@ -22,11 +21,8 @@ namespace SortingData
                         array[j] = temp;
                     }
                 }
-
                 array.Dump($"Iteration #{i + 1}");
             }
-
-            array.Dump("End state");
         }
     }
 }
