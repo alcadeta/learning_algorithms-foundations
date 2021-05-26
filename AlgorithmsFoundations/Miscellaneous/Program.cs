@@ -9,7 +9,7 @@ namespace Miscellaneous
         static void Main(string[] args)
         {
             // *** IS-SORTED *** //
-            // var numbers = new List<int> {6, 20, 8, 19, 56, 23, 87, 41, 49, 53};
+            var numbers = new List<int> {6, 20, 8, 19, 56, 23, 87, 41, 49, 53};
             // var orderedNumbers = new List<int> {6, 8, 19, 20, 23, 41, 49, 53, 56, 87};
 
             // IsSorted.Run(numbers);
@@ -33,8 +33,11 @@ namespace Miscellaneous
             // Recursion.Countdown(10);
             // Console.WriteLine($"5 to the power of 3 is {Recursion.Power(5, 3)}");
             // Console.WriteLine($"1 to the power of 5 is {Recursion.Power(1, 5)}");
-            Console.WriteLine($"4! is {Recursion.Factorial(4)}");
-            Console.WriteLine($"0! is {Recursion.Factorial(0)}");
+            // Console.WriteLine($"4! is {Recursion.Factorial(4)}");
+            // Console.WriteLine($"0! is {Recursion.Factorial(0)}");
+            var highest = FindMax.Run(numbers);
+            Console.WriteLine($"The highest is {highest}");
+
         }
     }
 }
