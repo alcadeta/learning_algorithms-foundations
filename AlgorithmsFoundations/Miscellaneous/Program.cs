@@ -30,7 +30,9 @@ namespace Miscellaneous
 
 
             // *** RECURSION *** //
-            Recursion.Countdown(10);
+            // Recursion.Countdown(10);
+            Console.WriteLine($"5 to the power of 3 is {Recursion.Power(5, 3)}");
+            Console.WriteLine($"1 to the power of 5 is {Recursion.Power(1, 5)}");
         }
     }
 }
