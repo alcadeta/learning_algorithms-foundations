@@ -17,5 +17,9 @@ namespace Miscellaneous
         public static int Power(int num, int pwr) =>
             pwr == 0 ? 1
                      : num * Power(num, pwr - 1);
+
+        public static int Factorial(int num) =>
+            num == 0 ? 1
+                     : num * Factorial(num - 1);
     }
 }
