@@ -12,7 +12,8 @@ namespace SortingData
             numbers.Dump("Begin state");
 
             // BubbleSort.Run(numbers);
-            numbers = MergeSort.Run(numbers);
+            // numbers = MergeSort.Run(numbers);
+            QuickSort.Run(numbers, 0, numbers.Count - 1);
 
             numbers.Dump("End state");
         }
